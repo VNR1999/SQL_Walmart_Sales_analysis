@@ -1,4 +1,4 @@
-                           ##  SQL WALMART SALES ANALYSIS PROJECT
+   # SQL_Walmart_Sales_Analysis_Project
 
                                     
 
@@ -22,44 +22,28 @@
    branches of Walmart respectively located in Mandalay, Yangon, Naypyitaw. the data contains 17 columns and 1000 rows:
 
   
-   ##  | Column                  | Description                            |Data Type     |                   
-       ......................... |........................................|...............
-       |invoice_id               |Invoice of the made                     |varchar(30)   |
-  
-       |branch                   |Branch at which sales were made         |varchar(5)    |
-       
-       |city                     |The location of the branch              |varchar(30)   |
- 
-       |customer_type            |The type of the customer                |varchar(30)   |
-       
-       |gender                   |Gender of the customer making purchase  |varchar(10)   |
-
-       |product_line             |product line of the product sold        |varchar(100)  |     
-
-       |Unit_price               |The price of each product               |float         |
-
-       |quantity                 |The amount of the product sold          |int           |
-
-       |vat(tax)                 |The amount of tax on the purchase       |float         |
-
-       |total                    |The total cost of the purchase          |float         |
-     
-       |Sales_date               |The date on which the purchase was made |Date          |
-
-       |Sales_time               |The time at which the purchase was made |time          |
-
-       |Payment(payment_method)  |payment method                          |varchar(20)   |
-
-       |cogs                     |cost of goods sold                      |float         |
-
-       |gross_margin_pct         |gross margin percentage                 |float         |
-
-       |gross_income             |Gross income                            |float         |
-
-       |rating                   |Rating                                  |float         |
+| Column_Name              | Description                            |Data Type     |                   
+|------------------------- |----------------------------------------|--------------
+|invoice_id                |Invoice of the made                     |varchar(30)   | 
+|branch                    |Branch at which sales were made         |varchar(5)    |      
+|city                      |The location of the branch              |varchar(30)   |
+|customer_type             |The type of the customer                |varchar(30)   |     
+|gender                    |Gender of the customer making purchase  |varchar(10)   |
+|product_line             |product line of the product sold        |varchar(100)  |     
+|Unit_price               |The price of each product               |float         |
+|quantity                 |The amount of the product sold          |int           |
+|vat(tax)                 |The amount of tax on the purchase       |float         |
+|total                    |The total cost of the purchase          |float         |    
+|Sales_date               |The date on which the purchase was made |Date          |
+|Sales_time               |The time at which the purchase was made |time          |
+|Payment(payment_method)  |payment method                          |varchar(20)   |
+|cogs                     |cost of goods sold                      |float         |
+|gross_margin_pct         |gross margin percentage                 |float         |
+|gross_income             |Gross income                            |float         |
+|rating                   |Rating                                  |float         |
 
 
-    ## Analysis List
+  ## Analysis List
 
     1.Product Analysis :   
     
@@ -103,7 +87,7 @@
      Create database Walmart_sales
 
    ## Create walmart sales table (table name taken 'sales')
-
+     
      Create table Sales (
      invoice_id varchar(30) primary key,
      branch varchar(5),
@@ -121,7 +105,8 @@
      gross_margin_pct float,
      gross_income float,
      rating float
-     );   
+     ); 
+    
          
     
 
