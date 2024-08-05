@@ -1,10 +1,34 @@
+--- Create Data base
 
+Create database Walmart_sales
 
+--- create walmart sales table(table name taken 'sales')
 
+     Create table Sales (
+     invoice_id varchar(30) Not Null primary key,
+     branch varchar(5) Not Null,
+     city varchar(30) Not Null,
+     gender varchar(10) Not Null,
+     product_line varchar(100) Not Null,
+     unit_price float Not Null,
+     quantity int Not Null,
+     tax float Not Null,
+     total float Not Null,
+     sales_date Date Not Null,
+     sales_time Time Not Null,
+     payment varchar(20) Not Null,
+     cogs float Not Null,
+     gross_margin_pct float,
+     gross_income float,
+     rating float
+     ); 
 
 use walmartsales;
+
 select * from sales;
+
 select * from sales where invoice_id is null;
+
 ## add the time_of_day column ##
 alter table sales
 add column time_of_day varchar(20);
