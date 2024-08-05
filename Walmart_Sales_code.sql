@@ -1,3 +1,7 @@
+
+
+
+
 use walmartsales;
 select * from sales;
 select * from sales where invoice_id is null;
@@ -140,7 +144,7 @@ order by revenue asc;
 select gender, count(*) as gender_cnt from sales
 group by gender
 order by gender_cnt desc; 
-## Branch wise (A,B,c) and female vs customer type check revenue ##
+---  Branch wise (A,B,c) and gender vs customer type check revenue ##
 select customer_type,gender,branch,round(sum(total))as revenue from sales
 where branch in ("a","b","c")
 group by customer_type,gender,branch
