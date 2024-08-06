@@ -32,6 +32,7 @@ select * from sales where invoice_id is null;
 ## add the time_of_day column ##
 alter table sales
 add column time_of_day varchar(20);
+
 ## update_time_of_day in the sales table ##
 update sales set time_of_day =(
 case 
@@ -40,18 +41,19 @@ when sales_time between "12:01:00" and "16:00:00" then "Afternoon"
 else "evening"
 end 
 );
+
 ## add day_name column in sales table from sales_date column ##
 alter table sales 
 add column Day_name varchar(10);
 update sales set Day_name = dayname(sales_date);
+
 ## add Month_name column in sales table from sales_date column ##
 alter table sales 
 add column Month_name varchar(10);
+
 update sales set Month_name = monthname(sales_date);
+
 ## 1Q) how many unique cities are there in sales table ? ##
-select distinct city, count(*) as count_city from sales
-group by city;
-## OR ##
 select count(distinct city)as unique_city_count from sales;
 
 ## 2Q) in which city each branch ##
